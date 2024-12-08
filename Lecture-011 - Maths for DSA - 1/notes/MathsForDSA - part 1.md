@@ -6,26 +6,21 @@ Example
 Base 2 -> 0,1
 Base 3 -> 0,1,2
 
-Some special highlighted Bases are
-Binary -> Base 2
-Octal -> Base 8
-Decimal -> Base 10
-HexaDecimal -> Base 16
-Note: HexaDecimal has given some special names in the form of Alphabets to 10, 11, 12, 13, 14 and 15.
-HexaDecimal -> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+## Some special highlighted Bases are
+- Binary -> Base 2
+- Octal -> Base 8
+- Decimal -> Base 10
+- HexaDecimal -> Base 16
+>Note: HexaDecimal has given some special names in the form of Alphabets to 10, 11, 12, 13, 14 and 15. HexaDecimal -> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
 
-### Conversion of a number from Any base to Decimal
+## Conversion of a number from Any Base -> Decimal (multiplication)
 Suppose you want to convert a number of base 'x' to Decimal(Base 10).
-The approach is simple,
-To convert a number of any base to decimal, follow these steps:
+1. Identify the `base of the number`.
+2. `Write down the digits of the number`.
+3. For each digit, `multiply by the base raised to the power of its position`, starting `from right to left`.
+4. `Sum all the products` obtained from step 3.
 
-1. Identify the base of the number.
-2. Write down the digits of the number.
-3. For each digit, multiply by the base raised to the power of its position, starting from the rightmost digit with position 0.
-4. Sum all the products obtained from step 3.
-
-Example: Convert the number 1011 from base 2 to decimal
-
+### Example: Convert 1011 from base 2 to decimal
 1. The base of the number is 2.
 2. The digits of the number are 1, 0, 1, and 1.
 For each digit:
@@ -38,16 +33,14 @@ Sum the products: 1 + 2 + 8 = 11.
 Therefore, the decimal equivalent of the binary number 1011 is 11.
 
 
-### Conversion of a number from Decimal to Any base
+## Conversion of a number from Decimal to Any base (division)
 To convert a decimal number to any base, follow these steps:
-
-1. Identify the desired base.
-2. Divide the decimal number by the base, and take the integer quotient as the next digit to the left.
-3. Repeat step 2 using the remainder obtained in step 2 as the new decimal number.
-4. Repeat steps 2 and 3 until the quotient is 0.
-5. The remainders obtained in step 3, read from bottom to top, represent the digits of the converted number.
+1. `Identify the desired base`.
+2. `Divide the decimal number by the base`, and `take the integer quotient as the next digit to the left`.
+3. Repeat step 2 using the `remainder obtained in step 2 as the new decimal number`.
+4. Repeat steps 2 and 3 `until the quotient is 0`.
+5. The remainders obtained in step 3, `read from bottom to top`, represent the digits of the converted number.
 Example: Convert the decimal number 11 to base 2
-
 1. The desired base is 2.
 2. Divide 11 by 2: 11 / 2 = 5 with a remainder of 1.
 3. Divide 5 by 2: 5 / 2 = 2 with a remainder of 1.
