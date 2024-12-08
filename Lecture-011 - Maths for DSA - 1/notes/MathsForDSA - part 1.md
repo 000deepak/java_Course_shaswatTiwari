@@ -1,7 +1,7 @@
 # Maths For DSA
 
 ## Number System
-### Any number of Base N means that it has digits from 0 to N-1
+>Any number of Base N means that it has digits from 0 to N-1
 Example
 Base 2 -> 0,1
 Base 3 -> 0,1,2
