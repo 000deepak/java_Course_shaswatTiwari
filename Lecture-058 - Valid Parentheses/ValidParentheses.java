@@ -13,6 +13,10 @@ class Solution {
                 if(stack.isEmpty()){
                     return false;
                 }
+                //case 1 - if u get first closing then opening return false - )(
+                //case 2 - if length of syring is odd return false
+                //case 3 - ig type is not matched return false
+                
                 char top = stack.peek();
                 if(ch == ')' && top != '('){
                     return false;
